@@ -2209,11 +2209,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1764975853059681435, guid: befcdbf8ce8ae9a40a05a7303536e8ad, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1764975853059681435, guid: befcdbf8ce8ae9a40a05a7303536e8ad, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1938056971520045537, guid: befcdbf8ce8ae9a40a05a7303536e8ad, type: 3}
       propertyPath: m_RootOrder

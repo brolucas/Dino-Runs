@@ -6,6 +6,7 @@ public class Jump : MonoBehaviour
 {
     float speed = 1f;
     Rigidbody2D rb;
+    bool isonthefloor = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,15 @@ public class Jump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump")) { 
             rb.AddForce(new Vector2(0, 200));
+            isonthefloor = false;
         }
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Sol")
+        {
+            isonthefloor = true;
+        }
+    }
+
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    float speed = 3f;
+    
     Rigidbody2D rb;
     bool isonthefloor = false;
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class Jump : MonoBehaviour
             isonthefloor = false;
         }
     }
-    void OnCollisionEnter2D(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("collison");
         if (collision.gameObject.tag == "Sol")

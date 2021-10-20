@@ -21,8 +21,9 @@ public class Jump : MonoBehaviour
             isonthefloor = false;
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision collision)
     {
+        Debug.Log("collison");
         if (collision.gameObject.tag == "Sol")
         {
             isonthefloor = true;

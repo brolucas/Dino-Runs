@@ -1655,6 +1655,7 @@ GameObject:
   - component: {fileID: 1689738599}
   - component: {fileID: 1689738601}
   - component: {fileID: 1689738600}
+  - component: {fileID: 1689738602}
   m_Layer: 0
   m_Name: Tilemaps sol
   m_TagString: Untagged
@@ -2036,6 +2037,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1689738602
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689738598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1729249325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +2202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1764975853059681435, guid: befcdbf8ce8ae9a40a05a7303536e8ad, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1938056971520045537, guid: befcdbf8ce8ae9a40a05a7303536e8ad, type: 3}
       propertyPath: m_RootOrder
       value: 1

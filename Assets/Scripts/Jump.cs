@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    float speed = 1f;
+    float speed = 3f;
     Rigidbody2D rb;
     bool isonthefloor = false;
     // Start is called before the first frame update

@@ -4,10 +4,10 @@
 
 
 # Description :
-	
-	 Voici un jeu fort sympathique à jouer seul ou à plusieurs, avec des amies ou en famille. Vous incarnez un dinosaure
-    qui tente d'échapper à une météorite. Votre but est donc, d'aller le plus loin possible en évitant plantes et animaux
-    sur votre route. Bonne chance et ... ... **fuyez pauvre fou** !!!
+
+Voici un jeu fort sympathique à jouer seul ou à plusieurs, avec des amies ou en famille. Vous incarnez un dinosaure
+qui tente d'échapper à une météorite. Votre but est donc, d'aller le plus loin possible en évitant plantes et animaux
+sur votre route. Bonne chance et ... ... **fuyez pauvre fou** !!!
 
 # Membres :
 

@@ -17,7 +17,7 @@ public class Jump : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Jump") && isonthefloor) { 
-            rb.AddForce(new Vector2(0, 200));
+            rb.AddForce(new Vector2(0, 250));
             isonthefloor = false;
         }
     }

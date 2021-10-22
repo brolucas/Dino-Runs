@@ -15,11 +15,13 @@ public class MenuManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main menu");
     }
 
     public void LoadSameScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -30,6 +32,7 @@ public class MenuManager : MonoBehaviour
 
     public void QuitGame()
     {
+        Time.timeScale = 1;
         Application.Quit();
     }
 }

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    
+    public GameObject gameOverUI;
     Rigidbody2D rb;
     bool isonthefloor = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             Time.timeScale = 0;
+            gameOverUI.SetActive(true);
         }
     }
 

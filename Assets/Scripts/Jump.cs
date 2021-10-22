@@ -16,14 +16,14 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump")) { 
+        if (Input.GetButtonDown("Jump") && isonthefloor) { 
             rb.AddForce(new Vector2(0, 200));
             isonthefloor = false;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collison");
+        
         if (collision.gameObject.tag == "Sol")
         {
             isonthefloor = true;

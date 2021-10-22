@@ -17,7 +17,7 @@ public class Jump : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Jump") && isonthefloor) { 
-            rb.AddForce(new Vector2(0, 250));
+            rb.AddForce(new Vector2(0, 400));
             isonthefloor = false;
         }
     }
@@ -27,6 +27,10 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.tag == "Sol")
         {
             isonthefloor = true;
+        }
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Time.timeScale = 0;
         }
     }
 

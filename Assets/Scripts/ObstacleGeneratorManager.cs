@@ -5,9 +5,9 @@ using UnityEngine;
 public class ObstacleGeneratorManager : MonoBehaviour
 {
     [Header ("Required")]
-    public Transform[] posSpawn;
+    public Transform posSpawn;
+    public Sprite[] groundObstacleSprite;
     public GameObject groundObstacle;
-    public GameObject aireObstacle;
 
     [Header ("Spawning Option")]
     public float timeBetween;
@@ -35,7 +35,12 @@ public class ObstacleGeneratorManager : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        GameObject instObstacle = Instantiate(groundObstacle, posSpawn[0]);
+        GameObject instObstacle = Instantiate(groundObstacle, posSpawn);
         instObstacle.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed);
+
+        int spritIndex = Random.Range(0, groundObstacleSprite.Length);
+        instObstacle.GetComponent<SpriteRenderer>().sprite = groundObstacleSprite[spritIndex];
+
+        instObstacle.tag = "Obstacle";
     }
 }

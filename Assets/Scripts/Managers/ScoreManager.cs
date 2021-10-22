@@ -13,6 +13,6 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         currentScore += Time.deltaTime * speed;
-        scoreUI.text = "" + (int)currentScore;
+        scoreUI.text = "Score : " + (int)currentScore;
     }
 }
